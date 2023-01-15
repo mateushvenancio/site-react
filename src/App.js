@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faLinkedin,
+    faInstagram,
+    faMedium,
+} from "@fortawesome/free-brands-svg-icons";
+import "./App.css";
+import eu from "./eu.webp";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App App-header">
+            <div className="Linha">
+                <img src={eu} alt="eu" className="Imagem" />
+                <div className="Coluna">
+                    <span className="Nome">
+                        <span className="Verde">M</span>ateus{" "}
+                        <span className="Verde">V</span>
+                        enâncio
+                    </span>
+                    <div className="Linha Icones">
+                        <a
+                            href="https://github.com/mateushvenancio"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="Link"
+                        >
+                            <FontAwesomeIcon
+                                onClick={() => {}}
+                                icon={faGithub}
+                            />
+                        </a>
+                        •
+                        <a
+                            href="https://www.linkedin.com/in/mateushvenancio/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="Link"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                        •
+                        <a
+                            href="https://www.instagram.com/mateushvenancio/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="Link"
+                        >
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                        •
+                        <a
+                            href="https://medium.com/@mateushvenancio"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="Link"
+                        >
+                            <FontAwesomeIcon icon={faMedium} />
+                        </a>
+                    </div>
+                    <div className="Linha"></div>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
