@@ -19,7 +19,7 @@ function App() {
                         <span className="Verde">V</span>
                         enâncio
                     </span>
-                    <div className="Linha Icones">
+                    <div className="Icones">
                         <a
                             href="https://github.com/mateushvenancio"
                             target="_blank"
@@ -59,7 +59,6 @@ function App() {
                             <FontAwesomeIcon icon={faMedium} />
                         </a>
                     </div>
-                    <div className="Linha"></div>
                 </div>
             </div>
         </div>
