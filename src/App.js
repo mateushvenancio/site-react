@@ -3,7 +3,7 @@ import {
     faGithub,
     faLinkedin,
     faInstagram,
-    faMedium,
+    faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import eu from "./eu.webp";
@@ -56,7 +56,7 @@ function App() {
                             rel="noreferrer"
                             className="Link"
                         >
-                            <FontAwesomeIcon icon={faMedium} />
+                            <FontAwesomeIcon icon={faMediumM} />
                         </a>
                     </div>
                 </div>
