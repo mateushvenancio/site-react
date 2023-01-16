@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 import eu from "./eu.webp";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
     return (
@@ -57,6 +58,15 @@ function App() {
                             className="Link"
                         >
                             <FontAwesomeIcon icon={faMediumM} />
+                        </a>
+                        •
+                        <a
+                            href="https://gitconnected.com/mateushvenancio/resume"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="Link"
+                        >
+                            <FontAwesomeIcon icon={faFileLines} />
                         </a>
                     </div>
                 </div>
