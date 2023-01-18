@@ -110,7 +110,7 @@ function Teclado() {
     });
 
     return (
-        <div className="Coluna ColunaCenter">
+        <div className="Coluna ColunaCenter TamanhoTeclado">
             <div className="Linha GapTecla">
                 {linhaCima.map((value) => (
                     <div onClick={() => handleTecla(value)}>

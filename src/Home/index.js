@@ -8,13 +8,11 @@ import {
 import "./App.css";
 import eu from "./eu.webp";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
-import Barra from "./Barra";
 
 export default function Home() {
     return (
         <div className="App App-header">
-            <Barra />
-            <div className="Linha Expand">
+            <div className="LinhaHome">
                 <img src={eu} alt="eu" className="Imagem" />
                 <div className="Coluna">
                     <span className="Nome">
@@ -23,56 +21,43 @@ export default function Home() {
                         enâncio
                     </span>
                     <div className="Icones">
-                        <a
-                            href="https://github.com/mateushvenancio"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="Link"
-                        >
-                            <FontAwesomeIcon
-                                onClick={() => {}}
-                                icon={faGithub}
-                            />
-                        </a>
+                        <Icone
+                            url={"https://github.com/mateushvenancio"}
+                            icon={faGithub}
+                        />
                         •
-                        <a
-                            href="https://www.linkedin.com/in/mateushvenancio/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="Link"
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} />
-                        </a>
+                        <Icone
+                            url={"https://www.linkedin.com/in/mateushvenancio/"}
+                            icon={faLinkedin}
+                        />
                         •
-                        <a
-                            href="https://www.instagram.com/mateushvenancio/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="Link"
-                        >
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </a>
+                        <Icone
+                            url={"https://www.instagram.com/mateushvenancio/"}
+                            icon={faInstagram}
+                        />
                         •
-                        <a
-                            href="https://medium.com/@mateushvenancio"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="Link"
-                        >
-                            <FontAwesomeIcon icon={faMediumM} />
-                        </a>
+                        <Icone
+                            url={"https://medium.com/@mateushvenancio"}
+                            icon={faMediumM}
+                        />
                         •
-                        <a
-                            href="https://gitconnected.com/mateushvenancio/resume"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="Link"
-                        >
-                            <FontAwesomeIcon icon={faFileLines} />
-                        </a>
+                        <Icone
+                            url={
+                                "https://gitconnected.com/mateushvenancio/resume"
+                            }
+                            icon={faFileLines}
+                        />
                     </div>
                 </div>
             </div>
         </div>
+    );
+}
+
+function Icone({ url, icon }) {
+    return (
+        <a href={url} target="_blank" rel="noreferrer" className="Link">
+            <FontAwesomeIcon icon={icon} />
+        </a>
     );
 }

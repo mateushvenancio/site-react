@@ -79,10 +79,27 @@
   width: 65px;
 }
 
+@media (max-width: 510px) {
+  .Tecla {
+    width: 1.9em;
+  }
+  .TeclaGrande {
+    width: 65px;
+  }
+}
+
 .Alert {
   color: red;
 }
 
 .Negrito {
   font-weight: bold;
+}
+
+hr {
+  margin-top: 0;
+}
+
+.TamanhoTeclado {
+  width: 100%;
 }
