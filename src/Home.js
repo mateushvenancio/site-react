@@ -9,7 +9,7 @@ import "./App.css";
 import eu from "./eu.webp";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+export default function Home() {
     return (
         <div className="App App-header">
             <div className="Linha">
@@ -74,5 +74,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

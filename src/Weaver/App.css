@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.Coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ColunaCenter {
+  align-items: center;
+}
+
+.Linha {
+  display: flex;
+  flex-direction: row;
+}
+
+.Barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.BotaoBarra {
+  border: 1px solid grey;
+  border-radius: 45px;
+  padding: 5px 10px;
+}
+
+.Gap {
+  gap: 10px;
+}
+
+.GapTecla {
+  gap: 5px;
+}
+
+.Letra {
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.LetraInicial {
+  background-color: #d3d3d3;
+}
+
+.LetraAtual {
+  box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+}
+
+.LetraAlterada {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.LetraVerde {
+  background-color: green;
+  color: white;
+}
+
+.Tecla {
+  height: 45px;
+  width: 35px;
+  line-height: 45px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+}
+
+.TeclaGrande {
+  width: 65px;
+}
+
+.Alert {
+  color: red;
+}
+
+.Negrito {
+  font-weight: bold;
+}
