@@ -8,11 +8,13 @@ import {
 import "./App.css";
 import eu from "./eu.webp";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import Barra from "./Barra";
 
 export default function Home() {
     return (
         <div className="App App-header">
-            <div className="Linha">
+            <Barra />
+            <div className="Linha Expand">
                 <img src={eu} alt="eu" className="Imagem" />
                 <div className="Coluna">
                     <span className="Nome">

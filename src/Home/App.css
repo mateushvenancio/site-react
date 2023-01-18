@@ -63,3 +63,16 @@
   align-items: center;
   gap: 20px;
 }
+
+.Expand {
+  flex-grow: 1;
+}
+
+.Barra {
+  padding: 16px;
+  font-size: 14px;
+}
+
+a {
+  color: white;
+}
