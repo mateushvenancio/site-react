@@ -33,6 +33,9 @@
   .Linha {
     flex-direction: column;
   }
+  .Nome {
+    padding: 0 16px;
+  }
 }
 
 .Verde {
