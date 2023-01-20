@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className="App App-header">
             <div className="LinhaHome">
-                <img src={eu} alt="eu" className="Imagem" />
+                <img src={eu} alt="eu" draggable={false} className="Imagem" />
                 <div className="Coluna">
                     <span className="Nome">
                         <span className="Verde">M</span>ateus{" "}
