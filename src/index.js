@@ -5,6 +5,7 @@ import "./index.css";
 
 import Home from "./Home";
 import Weaver from "./Weaver";
+import Datle from "./Datle";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     {
         path: "/weaver",
         element: <Weaver />,
+    },
+    {
+        path: "/datle",
+        element: <Datle />,
     },
 ]);
 
