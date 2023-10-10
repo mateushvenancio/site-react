@@ -21,7 +21,7 @@ export default function Home() {
     );
 }
 
-export function Header() {
+function Header() {
     return (
         <div>
             <Toast />
@@ -49,7 +49,7 @@ export function Header() {
     );
 }
 
-export function Toast() {
+function Toast() {
     return (
         <div className="bg-primary w-fit text-white px-4 py-2 rounded-tr-lg rounded-tl-lg rounded-br-lg mb-2 hover:ml-2 transition-all">
             Olá, eu sou
@@ -57,7 +57,7 @@ export function Toast() {
     );
 }
 
-export function HomeIcon({ icon, text, link }: TypeIcon) {
+function HomeIcon({ icon, text, link }: TypeIcon) {
     return (
         <a href={link} className="hover:text-primary hover:pl-2 transition-all">
             <FontAwesomeIcon icon={icon} className="pr-2" />
@@ -66,7 +66,7 @@ export function HomeIcon({ icon, text, link }: TypeIcon) {
     );
 }
 
-export function About() {
+function About() {
     return (
         <>
             <Title title="About" />
@@ -86,7 +86,7 @@ export function About() {
     );
 }
 
-export function Title({ title }: { title: string }) {
+function Title({ title }: { title: string }) {
     return (
         <div className="text-lg font-bold border-dashed border-t-2 border-primary pt-4 mt-4">
             {title}
@@ -94,7 +94,7 @@ export function Title({ title }: { title: string }) {
     );
 }
 
-export function Projects() {
+function Projects() {
     return (
         <>
             <Title title="Projects" />
@@ -110,7 +110,7 @@ export function Projects() {
     );
 }
 
-export function ProjectTile() {
+function ProjectTile() {
     return (
         <div className="shadow-md hover:shadow-lg rounded-lg p-4 transition-all cursor-default">
             <p className="text-lg">Título do projeto</p>
@@ -135,7 +135,7 @@ export function ProjectTile() {
     );
 }
 
-export function TechChip({ name }: { name: String }) {
+function TechChip({ name }: { name: String }) {
     return (
         <div className="py-2 w-fit text-primary px-1 py-0 border rounded border-primary text-sm hover:text-white hover:bg-primary transition-all">
             {name}
@@ -143,7 +143,7 @@ export function TechChip({ name }: { name: String }) {
     );
 }
 
-export function HomeFooter() {
+function HomeFooter() {
     return (
         <div className="py-8 text-center border-dashed border-t-2 py-4 my-8 border-primary">
             Made with ❤️ by Mateus Venâncio using Tailwind & NextJs.
