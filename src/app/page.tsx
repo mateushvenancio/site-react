@@ -12,6 +12,7 @@ export default function Home() {
             <div className="max-w-[700px] m-auto pt-24 px-4 text-black-400">
                 <Header />
                 <About />
+                <Projects />
             </div>
         </>
     );
@@ -19,7 +20,7 @@ export default function Home() {
 
 export function Header() {
     return (
-        <div className="border-dashed border-b-2 py-8">
+        <div>
             <Toast />
             <h1 className="text-4xl font-bold">Mateus Venâncio</h1>
             <h2 className="text-3xl">Developer</h2>
@@ -66,7 +67,7 @@ export function HomeIcon({ icon, text, link }: TypeIcon) {
 export function About() {
     return (
         <>
-            <div className="text-lg font-bold">About</div>
+            <Title title="About" />
             <div className="flex flex-row items-center py-2">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -80,5 +81,62 @@ export function About() {
                 </p>
             </div>
         </>
+    );
+}
+
+export function Title({ title }: { title: string }) {
+    return (
+        <div className="text-lg font-bold border-dashed border-t-2 py-4 my-4">
+            {title}
+        </div>
+    );
+}
+
+export function Projects() {
+    return (
+        <>
+            <Title title="Projects" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <ProjectTile />
+                <ProjectTile />
+                <ProjectTile />
+                <ProjectTile />
+                <ProjectTile />
+                <ProjectTile />
+            </div>
+        </>
+    );
+}
+
+export function ProjectTile() {
+    return (
+        <div className="shadow-md hover:shadow-lg rounded-lg p-4 transition-all cursor-default">
+            <p className="text-lg">Título do projeto</p>
+            <p className="text-sm truncate">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                distinctio quos, iure excepturi iusto inventore ea blanditiis
+                veniam laudantium ipsa quas maiores quia a error et, voluptates
+                odio incidunt? Maiores!
+            </p>
+            <div className="flex flex-wrap gap-1 pt-2">
+                <TechChip name="Flutter" />
+                <TechChip name="Node" />
+                <TechChip name="Angular" />
+                <TechChip name="Firebase" />
+                <TechChip name="Git" />
+                <TechChip name="Html" />
+                <TechChip name="Css" />
+                <TechChip name="Javascript" />
+                <TechChip name="Typescript" />
+            </div>
+        </div>
+    );
+}
+
+export function TechChip({ name }: { name: String }) {
+    return (
+        <div className="py-2 w-fit text-primary px-1 py-0 border rounded border-primary text-sm hover:text-white hover:bg-primary transition-all">
+            {name}
+        </div>
     );
 }
