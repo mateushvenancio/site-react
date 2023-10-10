@@ -3,6 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import HomeSpotify from './spotify';
 
 type TypeIcon = { icon: any; text: string; link: string };
 
@@ -12,7 +13,9 @@ export default function Home() {
             <div className="max-w-[700px] m-auto pt-24 px-4 text-black-400">
                 <Header />
                 <About />
+                <HomeSpotify />
                 <Projects />
+                <HomeFooter />
             </div>
         </>
     );
@@ -42,7 +45,6 @@ export function Header() {
                     link="google.com"
                 />
             </div>
-            <div className="border-dotted"></div>
         </div>
     );
 }
@@ -68,7 +70,7 @@ export function About() {
     return (
         <>
             <Title title="About" />
-            <div className="flex flex-row items-center py-2">
+            <div className="py-2">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Eligendi deserunt libero quaerat accusamus commodi vel
@@ -86,7 +88,7 @@ export function About() {
 
 export function Title({ title }: { title: string }) {
     return (
-        <div className="text-lg font-bold border-dashed border-t-2 py-4 my-4">
+        <div className="text-lg font-bold border-dashed border-t-2 border-primary pt-4 mt-4">
             {title}
         </div>
     );
@@ -112,7 +114,7 @@ export function ProjectTile() {
     return (
         <div className="shadow-md hover:shadow-lg rounded-lg p-4 transition-all cursor-default">
             <p className="text-lg">Título do projeto</p>
-            <p className="text-sm truncate">
+            <p className="text-sm line-clamp-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
                 distinctio quos, iure excepturi iusto inventore ea blanditiis
                 veniam laudantium ipsa quas maiores quia a error et, voluptates
@@ -137,6 +139,14 @@ export function TechChip({ name }: { name: String }) {
     return (
         <div className="py-2 w-fit text-primary px-1 py-0 border rounded border-primary text-sm hover:text-white hover:bg-primary transition-all">
             {name}
+        </div>
+    );
+}
+
+export function HomeFooter() {
+    return (
+        <div className="py-8 text-center border-dashed border-t-2 py-4 my-8 border-primary">
+            Made with ❤️ by Mateus Venâncio using Tailwind & NextJs.
         </div>
     );
 }

@@ -5,6 +5,9 @@ const nextConfig = {
             {
                 hostname: 'www.mateusvenancio.com.br',
             },
+            {
+                hostname: 'images-americanas.b2w.io',
+            },
         ],
     },
 };
