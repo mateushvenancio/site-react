@@ -32,17 +32,17 @@ export function Header() {
                 <HomeIcon
                     icon={faEnvelope}
                     text="contato@mateusvenancio.com.br"
-                    link="google.com"
+                    link="mailto:contato@mateusvenancio.com.br"
                 />
                 <HomeIcon
                     icon={faLinkedin}
-                    text="/mateushvenancio"
-                    link="google.com"
+                    text="mateushvenancio"
+                    link="https://www.linkedin.com/in/mateushvenancio/"
                 />
                 <HomeIcon
                     icon={faGithub}
-                    text="/mateushvenancio"
-                    link="google.com"
+                    text="mateushvenancio"
+                    link="https://github.com/mateushvenancio"
                 />
             </div>
         </div>
